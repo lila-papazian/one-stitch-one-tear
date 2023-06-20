@@ -1,7 +1,7 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import "../css/styles.css";
-import "./i18n";
+import "../i18n";
 import { useTranslation, Trans } from "react-i18next";
 import Carousel from "react-bootstrap/Carousel";
 

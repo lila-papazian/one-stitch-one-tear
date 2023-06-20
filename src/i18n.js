@@ -31,8 +31,6 @@ const resources = {
   },
 };
 
-i18n.languages = ["en", "es"];
-
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
