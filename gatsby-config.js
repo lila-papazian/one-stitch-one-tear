@@ -6,5 +6,8 @@ module.exports = {
     title: `one-stitch-one-tear-g`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+  ],
 }
