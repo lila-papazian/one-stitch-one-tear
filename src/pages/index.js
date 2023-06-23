@@ -4,6 +4,8 @@ import "../css/styles.css";
 import "../i18n";
 import { useTranslation, Trans } from "react-i18next";
 import Carousel from "react-bootstrap/Carousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 const lngs = {
   en: { nativeName: "EN" },
@@ -138,10 +140,12 @@ const IndexPage = () => {
           height={1000}
         />
         <section id="synopsis" className="section-spacing">
-          <div class="row align-items-center justify-content-start">
+          <div class="row align-items-center justify-content-center">
             <div class="col-md-3">
-              <h1 className="mb-0">{t("Synopsis")}</h1>
+              <h3 className="title-spacing text-center">{t("Synopsis")}</h3>
             </div>
+          </div>
+          <div class="row align-items-center justify-content-start">
             <div class="col">
               <Trans i18nKey="Synopsis Text"></Trans>
             </div>
@@ -151,7 +155,7 @@ const IndexPage = () => {
         <section className="section-spacing" id="trailer">
           <div class="row align-items-center justify-content-center">
             <div class="col">
-              <h1 className="title-spacing text-center">{t("Trailer")}</h1>
+              <h3 className="title-spacing text-center">{t("Trailer")}</h3>
             </div>
           </div>
 
@@ -183,7 +187,9 @@ const IndexPage = () => {
           id="behindTheScene"
         >
           <div class="container-fluid">
-            <h1 className="titleSpacing">{t("Behind the scenes")}</h1>
+            <h3 className="title-spacing text-center">
+              {t("Behind the scenes")}
+            </h3>
             <div class="row align-items-center justify-content-center">
               <div class="col-sm-12 col-md-4">
                 <StaticImage
@@ -192,11 +198,14 @@ const IndexPage = () => {
                 />
               </div>
               <div class="col-sm-12 col-md-4">
-                <StaticImage src="../images/making/making-02.jpg" />
+                <StaticImage
+                  src="../images/making/making-04.jpg"
+                  layout="full-width"
+                />
               </div>
               <div class="col-sm-12 col-md-4">
                 <StaticImage
-                  src="../images/making/making-04.jpg"
+                  src="../images/making/making-02.jpg"
                   layout="full-width"
                   height={1000}
                 />
@@ -207,7 +216,7 @@ const IndexPage = () => {
         <section className="section-spacing w-75 m-auto" id="gallery">
           <div class="row align-items-center justify-content-center">
             <div class="col">
-              <h1 className="title-spacing text-center">{t("Gallery")}</h1>
+              <h3 className="title-spacing text-center">{t("Gallery")}</h3>
             </div>
           </div>
           <Carousel indicators={false}>
@@ -249,25 +258,30 @@ const IndexPage = () => {
           </Carousel>
         </section>
         <section className="section-spacing" id="documentalMaterial">
-          <div class="row align-items-center justify-content-start">
-            <div class="col-sm-12 col-md-4">
-              <h1 className="title-spacing">{t("Documental material")}</h1>
-              <p>
-                Tapices originales Tejedoras de Mampuján 2009 <br /> Bordado en
-                tela
-                <br />
-                Cortesía Fundación Puntos de Encuentro Universidad Externado de
-                Colombia
-              </p>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-sm-12">
+              <h3 className="title-spacing text-center">
+                {t("Documental material")}
+              </h3>
             </div>
+          </div>
+
+          <div class="row align-items-center justify-content-center">
             <div class="col-sm-12 col-md-4">
               <StaticImage src="../images/desplazamiento.png" />
-              <p className="text-center">Desplazamiento 161x105 cm</p>
+              <p className="text-center">{t('Displacement')} 161x105 cm</p>
             </div>
             <div class="col-sm-12 col-md-4">
               <StaticImage src="../images/origen-del-desplazamiento.png" />
               <p className="text-center">
-                Origen del desplazamiento 170x104 cm
+                {t("Displacement origin")} 170x104 cm
+              </p>
+            </div>
+          </div>
+          <div class="row align-items-center justify-content-center">
+            <div>
+              <p>
+               <Trans i18nKey="Description" />
               </p>
             </div>
           </div>
@@ -275,60 +289,37 @@ const IndexPage = () => {
         <section className="section-spacing" id="credits">
           <div class="row align-items-center justify-content-center">
             <div class="col">
-              <h1 className="title-spacing text-center">{t("Credits")}</h1>
+              <h3 className="title-spacing text-center">{t("Credits")}</h3>
             </div>
           </div>
           <div className="row align-items-start justify-content-center">
             <div className="col-md-6">
               <p>
-                IDEA ORIGINAL, INVESTIGACIÓN Y REALIZACIÓN DOCUMENTAL Carlos
-                Castro Macea <br /> GUIÓN Luz Marquez, Valentina Cayetano Kelly
-                <br /> PRODUCCIÓN GENERAL Loana Ferrero <br /> TEJEDORAS DE
-                MAMPUJAN Janiris Pulido, Juana Ruiz Hernández <br /> ANIMACIÓN
-                Walter Guarracino <br /> DISEÑO Y POSTPRODUCCIÓN SONORA
-                Alejandro Biko Gunkel <br /> MÚSICA ORIGINAL, VOCES Y TAMBORES
-                Catalina Gutierrez, Ezequiel Silva, Diego Noscué <br />
-                GRABACIÓN Eliana Cogliati <br /> DIRECCIÓN DE ARTE Y REALIZACIÓN
-                GENERAL Isabel Macias <br />
+               <Trans i18nKey="Credits first column" />
               </p>
             </div>
             <div className="col-md-6">
               <p>
-                REALIZACIÓN DE PUPETS Malenca Felce, Loana Ferrero <br />
-                REALIZACIÓN DE PROPS Malenca Felce <br /> ASISTENCIA DE
-                REALIZACIÓN Victoria Esplugas <br /> ASISTENCIA TRANSCRIPCIÓN
-                Diana Papazian <br />
-                ENTREVISTA Mesa BLU con Vanessa de la Torre - Blu Radio <br />
-                ASISTENCIA DE COMPOSICIÓN Sofia Gatti, Lucho Tortolini, Agustín
-                Gibert, Mauro Duarte <br /> CORRECCIÓN DE COLOR Nadia Amorena
-                <br /> DISEÑO WEB Lila Papazian
+               <Trans i18nKey="Credits second column" />
               </p>
             </div>
           </div>
         </section>
         <section className="section-spacing" id="pressKit">
-          <div class="row align-items-start justify-content-start">
-            <div class="col-md-3">
-              <h1 className="title-spacing">{t("Press kit")}</h1>
-            </div>
-            <div className="col-md-4 col-sm-12">
-              <StaticImage
-                src="../images/press kit/desplazamiento-web.jpg"
-                style={{
-                  boxShadow: "3px 1px 9px 0px rgba(0,0,0,0.75)",
-                }}
+          <div class="row align-items-center justify-content-center">
+            <h3 className="title-spacing text-center">{t("Press kit")}</h3>
+            <a
+              href="https://drive.google.com/drive/folders/1sVLUjVBW7Tzw8p_L43L-Jdn-TamA4MVi?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-center"
+            >
+              <FontAwesomeIcon
+                icon={faDownload}
+                size="2xl"
+                style={{ color: "#2E333F" }}
               />
-            </div>
-
-            <div className="col-md-4 col-sm-12">
-              <StaticImage
-                src="../images/press kit/poster-web.jpg"
-                height={500}
-                style={{
-                  boxShadow: "3px 1px 9px 0px rgba(0,0,0,0.75)",
-                }}
-              />
-            </div>
+            </a>
           </div>
         </section>
       </div>
