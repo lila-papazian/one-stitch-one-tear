@@ -6,6 +6,7 @@ import { useTranslation, Trans } from "react-i18next";
 import Carousel from "react-bootstrap/Carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { t } from "i18next";
 
 const lngs = {
   en: { nativeName: "EN" },
@@ -370,4 +371,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>One stitch, one tear</title>;
+export const Head = () => <title>{t('Name')}</title>;

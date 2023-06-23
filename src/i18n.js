@@ -5,6 +5,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 const resources = {
   en: {
     translation: {
+      Name: 'One stitch, one tear',
       Synopsis: "Synopsis",
       Trailer: "Trailer",
       "Behind the scenes": "Behind the scenes",
@@ -26,6 +27,7 @@ const resources = {
   },
   es: {
     translation: {
+      Name: "Una puntada, una lágrima",
       Synopsis: "Sinopsis",
       Trailer: "Tráiler",
       "Behind the scenes": "Detrás de escena",
