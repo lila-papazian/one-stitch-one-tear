@@ -5,7 +5,7 @@ import "../i18n";
 import { useTranslation, Trans } from "react-i18next";
 import Carousel from "react-bootstrap/Carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { t } from "i18next";
 
 const lngs = {
@@ -270,7 +270,7 @@ const IndexPage = () => {
           <div class="row align-items-center justify-content-center">
             <div class="col-sm-12 col-md-4">
               <StaticImage src="../images/desplazamiento.png" />
-              <p className="text-center">{t('Displacement')} 161x105 cm</p>
+              <p className="text-center">{t("Displacement")} 161x105 cm</p>
             </div>
             <div class="col-sm-12 col-md-4">
               <StaticImage src="../images/origen-del-desplazamiento.png" />
@@ -282,7 +282,7 @@ const IndexPage = () => {
           <div class="row align-items-center justify-content-center">
             <div>
               <p>
-               <Trans i18nKey="Description" />
+                <Trans i18nKey="Description" />
               </p>
             </div>
           </div>
@@ -296,12 +296,12 @@ const IndexPage = () => {
           <div className="row align-items-start justify-content-center">
             <div className="col-md-6">
               <p>
-               <Trans i18nKey="Credits first column" />
+                <Trans i18nKey="Credits first column" />
               </p>
             </div>
             <div className="col-md-6">
               <p>
-               <Trans i18nKey="Credits second column" />
+                <Trans i18nKey="Credits second column" />
               </p>
             </div>
           </div>
@@ -321,6 +321,33 @@ const IndexPage = () => {
                 style={{ color: "#2E333F" }}
               />
             </a>
+          </div>
+        </section>
+
+        <section className="section-spacing" id="contactSection">
+          <div class="row align-items-center justify-content-center">
+            <div className="col-sm-12">
+              <div className="row align-items-center justify-content-center">
+                <h3 className="title-spacing text-center">{t("Contact us")}</h3>
+              </div>
+              <div className="row align-items-center justify-content-center ">
+                <a
+                  href="mailto:sanquirino.estudio@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-center"
+                >
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    size="2xl"
+                    style={{ color: "#2E333F" }}
+                  />
+                </a>{" "}
+                <span className="text-center mt-2">
+                  {t("Email")} sanquirino.estudio@gmail.com
+                </span>
+              </div>
+            </div>
           </div>
         </section>
       </div>
@@ -371,4 +398,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>{t('Name')}</title>;
+export const Head = () => <title>{t("Name")}</title>;

@@ -23,6 +23,8 @@ const resources = {
         "GENERAL DIRECTOR Isabel Macias <br />ORIGINAL IDEA, RESEARCH AND DOCUMENTARY MAKING Carlos Castro Macea <br /> SCREENPLAY Luz Marquez, Valentina Cayetano Kelly<br /> GENERAL PRODUCTION Loana Ferrero <br /> WEAVER MAMPUJAN Janiris Pulido, Juana Ruiz Hernández <br /> ANIMATION Walter Guarracino <br /> SOUND DESIGN AND POST-PRODUCTION Alejandro Biko Gunkel <br /> ORIGINAL MUSIC, VOICES AND DRUMS Catalina Gutierrez, Ezequiel Silva, Diego Noscue<br /> RECORDING Eliana Cogliati <br /> ART DIRECTION AND DIRECTION GENERAL Isabel Macias <br />",
       "Credits second column":
         "MAKING PUPETS Malenca Felce, Loana Ferrero <br /> REALIZATION OF PROPS Malenca Felce <br /> ASSISTANCE OF DIRECTIONAL Victoria Esplugas <br /> ASSISTANCE TRANSCRIPT Diana Papazian<br /> INTERVIEW Mesa BLU with Vanessa de la Torre - Blu Radio <br /> COMPOSITION ASSISTANCE Sofia Gatti, Lucho Tortolini, Agustín Gibert, Mauro Duarte <br /> COLOR CORRECTION Nadia Amorena <br /> WEB DESIGN Lila Papazian",
+      "Contact us": "Contact us",
+      "Email": "Send us an email at "
     },
   },
   es: {
@@ -45,7 +47,9 @@ const resources = {
         " DIRECCIÓN GENERAL Isabel Macias <br />IDEA ORIGINAL, INVESTIGACIÓN Y REALIZACIÓN DOCUMENTAL Carlos Castro Macea <br /> GUIÓN Luz Marquez, Valentina Cayetano Kelly <br /> PRODUCCIÓN GENERAL Loana Ferrero <br /> TEJEDORAS DE MAMPUJAN Janiris Pulido, Juana Ruiz Hernández <br /> ANIMACIÓN Walter Guarracino <br /> DISEÑO Y POSTPRODUCCIÓN SONORA Alejandro Biko Gunkel <br /> MÚSICA ORIGINAL, VOCES Y TAMBORES Catalina Gutierrez, Ezequiel Silva, Diego Noscué <br /> GRABACIÓN Eliana Cogliati <br /> DIRECCIÓN DE ARTE Y REALIZACIÓN GENERAL Isabel Macias <br />",
       "Credits second column":
         "REALIZACIÓN DE PUPETS Malenca Felce, Loana Ferrero <br /> REALIZACIÓN DE PROPS Malenca Felce <br /> ASISTENCIA DE REALIZACIÓN Victoria Esplugas <br /> ASISTENCIA TRANSCRIPCIÓN Diana Papazian <br /> ENTREVISTA Mesa BLU con Vanessa de la Torre - Blu Radio <br /> ASISTENCIA DE COMPOSICIÓN Sofia Gatti, Lucho Tortolini, Agustín Gibert, Mauro Duarte <br /> CORRECCIÓN DE COLOR Nadia Amorena <br /> DISEÑO WEB Lila Papazian",
-    },
+      "Contact us": "Contactanos",
+      "Email": "Envianos un email a "
+      },
   },
 };
 
